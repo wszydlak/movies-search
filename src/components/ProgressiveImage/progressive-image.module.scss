@@ -1,0 +1,7 @@
+.image {
+  transition: filter 0.5s;
+
+  &_progress {
+    filter: blur(10px);
+  }
+}

@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #46484c;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: #dfdfdf;
+  font-weight: 700;
+
+  &__image {
+    height: 30px;
+    margin: 0 10px;
+  }
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  &__input {
+    border: none;
+    outline: none;
+    background: #dfdfdf;
+    border-radius: 2px;
+    line-height: 30px;
+    width: 200px;
+    font-size: 14px;
+    padding: 0 5px;
+
+    &::placeholder {
+      color: rgba(black, 0.7);
+    }
+  }
+
+  &__select {
+    border: none;
+    outline: none;
+    background: #dfdfdf;
+    height: 30px;
+    padding: 0 5px;
+    margin-left: 5px;
+  }
+}
