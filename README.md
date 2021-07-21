@@ -2,11 +2,11 @@
 
 ### Demo
 
-Demo available at [https://qarles.github.io/movies-search](https://qarles.github.io/movies-search)
+Demo available at [https://wszydlak.github.io/movies-search](https://wszydlak.github.io/movies-search)
 
 ### Requirements
 
-NodeJS 8+
+NodeJS 12+
 
 ### Running
 
