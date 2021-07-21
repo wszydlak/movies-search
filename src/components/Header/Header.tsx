@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+import logo from '../../assets/logo.png';
 import styles from './header.module.scss';
 
 const currentYear = new Date().getFullYear();
@@ -31,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <header className={styles['header']}>
       <div className={styles['logo']}>
-        <img className={styles['logo__image']} alt="Logo" src="/logo.png" />
+        <img className={styles['logo__image']} alt="Logo" src={logo} />
         Movies Search
       </div>
       <form onSubmit={e => e.preventDefault()} className={styles['form']}>

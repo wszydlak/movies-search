@@ -9,7 +9,7 @@ import Main from './components/Main';
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <Main />
       </BrowserRouter>

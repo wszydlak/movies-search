@@ -1,5 +1,6 @@
 import React from 'react';
 
+import noImage from '../../assets/no-image.png';
 import ProgressiveImage from '../ProgressiveImage';
 import styles from './movies.module.scss';
 
@@ -12,10 +13,10 @@ const Movie: React.FC<MovieProps> = ({ id, title, image, vote }) => {
         <ProgressiveImage
           className={styles['element__image']}
           alt={title}
-          preview={image ? image.small : 'no-image.png'}
-          src={image ? image.medium : 'no-image.png'}
+          preview={image ? image.small : noImage}
+          src={image ? image.medium : noImage}
           onError={e => {
-            (e.target as HTMLImageElement).src = 'no-image.png';
+            (e.target as HTMLImageElement).src = noImage;
           }}
         />
         <span className={styles['element__vote-wrapper']}>
